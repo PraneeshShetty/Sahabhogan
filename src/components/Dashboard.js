@@ -8,12 +8,12 @@ const Dashboard = () => {
 
     useEffect(() => {
         const fetchDonations = async () => {
-            const response = await axios.get('http://localhost:5000/api/donations');
+            const response = await axios.get('/api/donations');
             setDonations(response.data);
         };
 
         const fetchOrganizations = async () => {
-            const response = await axios.get('http://localhost:5000/api/organizations');
+            const response = await axios.get('/api/organizations');
             setOrganizations(response.data);
         };
 

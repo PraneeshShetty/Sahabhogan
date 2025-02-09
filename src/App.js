@@ -7,6 +7,10 @@ import OrganizationManagement from './components/OrganizationManagement';
 import DonationCreation from './components/DonationCreation';
 import Dashboard from './components/Dashboard';
 import Footer from './components/Footer';
+import AdminFoodRequest from './components/AdminFoodRequest';
+import UserProfile from './components/UserProfile';
+import OrganizationProfile from './components/OrganizationProfile';
+import AdminLogin from './components/AdminLogin';
 import { Container } from '@mui/material';
 
 const App = () => {
@@ -20,6 +24,11 @@ const App = () => {
                     <Route path="/organizations" element={<OrganizationManagement />} />
                     <Route path="/donate" element={<DonationCreation />} />
                     <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/admin/food-request" element={<AdminFoodRequest />} />
+                    <Route path="/user/profile" element={<UserProfile />} />
+                    <Route path="/organization/profile" element={<OrganizationProfile />} />
+                   
+                    <Route path="/admin/login" element={<AdminLogin />} />
                 </Routes>
             </Container>
             <Footer />
